@@ -16,3 +16,24 @@ display_menu()
 
 choice = input("Enter your choice: ")
 print("You entered:", choice)
+
+if choice == "1":
+    print("Add Expense Selected")
+
+elif choice == "3":
+    print("View Expenses Selected")
+
+elif choice == "3":
+    print("Delete Expense Selected")
+
+elif choice == "4":
+    print("Monthly Summary Selected")
+
+elif choice == "5":
+    print("Category Summary Selected")
+
+elif choice == "6":
+    print("Thank you for using Expense Tracker!")
+
+else:
+    print("Invalid Choice!")    
