@@ -1,7 +1,22 @@
-# createing the function for displaying the menu
+# createing the function 
 
 def add_expense():
-    print("add expense")
+    print("\n--------Add Expenses--------")
+
+    amount = float(input("Enter Amount: "))
+    category = input("Enter Category:")
+    description = input("Enter Description:")
+
+    expense = {
+        "amount": amount,
+        "category": category,
+        "description": description
+    }
+
+    print("\nExpense Added Successfully")
+    print("Amount:", expense["amount"])
+    print("Category:", expense["category"])
+    print("Description:", expense["description"])
 
 def view_expenses():
     print("View Expenses")
