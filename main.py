@@ -1,3 +1,14 @@
+# createing the function for displaying the menu
+
+def add_expense():
+    print("add expense")
+
+def view_expenses():
+    print("View Expenses")
+
+def delete_expense():
+    print("delete expense")
+
 def display_menu():
     print("==============================")
     print("      Expense Tracker")
@@ -13,18 +24,22 @@ def display_menu():
 
 display_menu()
     
+#takes user input
 
 choice = input("Enter your choice: ")
-print("You entered:", choice)
+#print("You entered:", choice)
+
+
+#decion making
 
 if choice == "1":
-    print("Add Expense Selected")
+    add_expense()
+
+elif choice == "2":
+    view_expenses()
 
 elif choice == "3":
-    print("View Expenses Selected")
-
-elif choice == "3":
-    print("Delete Expense Selected")
+    delete_expense()
 
 elif choice == "4":
     print("Monthly Summary Selected")
@@ -37,3 +52,4 @@ elif choice == "6":
 
 else:
     print("Invalid Choice!")    
+
