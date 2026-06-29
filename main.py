@@ -1,5 +1,7 @@
 # createing the function 
 
+import json
+
 def add_expense():
     print("\n--------Add Expenses--------")
 
@@ -12,6 +14,14 @@ def add_expense():
         "category": category,
         "description": description
     }
+    
+    try:
+        with open("expense.json","r") as file:  #opens file
+            expenses = json.load(file)  
+
+    except:
+        expenses = []  #says start with an empty list        
+
 
     print("\nExpense Added Successfully")
     print("Amount:", expense["amount"])
